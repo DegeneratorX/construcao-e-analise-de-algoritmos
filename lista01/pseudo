@@ -1,0 +1,16 @@
+FUNÇÃO ordenacao_unimodal(lista, k):
+    n <- tamanho(lista)
+
+    // Ordenação crescente até k
+    PARA i DE 0 ATÉ k-1:
+        PARA j DE 0 ATÉ i-1:
+            SE lista[j] > lista[j+1] ENTÃO
+                TROCAR lista[j] COM lista[j+1]
+
+    // Ordenação decrescente depois de k
+    PARA i DE k ATÉ n-2:
+        PARA j DE k ATÉ n-2:
+            SE lista[j] < lista[j+1] ENTÃO
+                TROCAR lista[j] COM lista[j+1]
+
+    IMPRIMIR lista

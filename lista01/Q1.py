@@ -11,6 +11,7 @@ def ordenar_duas_listas_como_uma(l1, l2):
 
     print(l1, l2)
 
+
 def insertion_sort(lista):
     for i in range(1, len(lista)):
         key = lista[i]
@@ -26,6 +27,7 @@ def main():
     l1 = [5, 9, 1, 7, 3]
     l2 = [4, 2, 10, 6, 8] 
     ordenar_duas_listas_como_uma(l1, l2)
+
 
 if __name__ == '__main__':
     main()
